@@ -1,0 +1,19 @@
+﻿@model RepositoryServicePatternDemo.Core.Models.FinancialStats
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+<h2>Default</h2>
+
+<ul>
+    <li class="d-inline-block">
+        <strong>@Html.DisplayNameFor(m => m.AverageFoodItemProfit)</strong>
+        @Html.DisplayFor(m => m.AverageFoodItemProfit)
+    </li>
+    <li class="d-inline-block">
+        <strong>@Html.DisplayNameFor(m => m.AverageTicketProfit)</strong>
+        @Html.DisplayFor(m => m.AverageTicketProfit)
+    </li>
+</ul>
+

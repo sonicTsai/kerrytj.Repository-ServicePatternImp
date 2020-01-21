@@ -1,0 +1,31 @@
+﻿@model IEnumerable<RepositoryServicePatternDemo.Core.Models.Ticket>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>@Html.DisplayNameFor(m => m.MovieName)</td>
+            <td>@Html.DisplayNameFor(m => m.SalePrice)</td>
+            <td>@Html.DisplayNameFor(m => m.StudioCutPercentage)</td>
+            <td>@Html.DisplayNameFor(m => m.Quantity)</td>
+            <td>@Html.DisplayNameFor(m => m.ProfitPerItem)</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m => item.MovieName)</td>
+                <td>@Html.DisplayFor(m => item.SalePrice)</td>
+                <td>@Html.DisplayFor(m => item.StudioCutPercentage)</td>
+                <td>@Html.DisplayFor(m => item.Quantity)</td>
+                <td>@Html.DisplayFor(m => item.ProfitPerItem)</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
